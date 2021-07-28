@@ -7,7 +7,7 @@ pipeline {
                 echo 'Deploying...'
                 sh '''
                 cd /var/www/html/test-pipeline/
-                chown -R root:www-data .git
+                sudo chown -R root:www-data .git
                 git pull origin main
                 '''
             }
