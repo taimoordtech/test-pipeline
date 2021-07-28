@@ -4,8 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git pull origin main
                 echo 'Building...'
+                sh '''
+            git pull origin main
+            '''
             }
         }
         stage('Test') {
