@@ -36,4 +36,8 @@ class HomeController extends Controller
     {
         return $num1+$num2;
     }
+
+    public function main(){
+        return('hello');
+    }
 }
