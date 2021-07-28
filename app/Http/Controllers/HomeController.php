@@ -15,6 +15,7 @@ class HomeController extends Controller
     {
        
         return view('home.index');
+    
     }
 
     /**
@@ -38,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return('hello');
+        return view('hello world baby 12345');
       
     }
 }
