@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Baby please...'
+                echo 'Baby please na...'
             }
         }
     }
