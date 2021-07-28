@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('hello world 6666666666666666');
+        return view('hello dev');
       
 
     }
