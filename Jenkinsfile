@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 sh '''
-            sudo git pull origin main
+            git pull origin main
             '''
             }
         }
