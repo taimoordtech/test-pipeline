@@ -7,7 +7,7 @@ pipeline {
                 echo 'Deploying...'
                 sh '''
                 cd /var/www/html/test-pipeline/
-            git pull origin main
+            sudo git pull origin main
             '''
             }
         }
