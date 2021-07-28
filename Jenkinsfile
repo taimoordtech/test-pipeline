@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 sh '''
-                cd /var/www/html/test-pipeline/
             sudo git pull origin main
             '''
             }
