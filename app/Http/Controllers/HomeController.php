@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('new stagging stagging working');
+        return view('stagging working');
       
 
     }
