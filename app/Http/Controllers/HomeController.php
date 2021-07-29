@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('hello this is stagging site');
+        return view('hello');
       
 
     }
