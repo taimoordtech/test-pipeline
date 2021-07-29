@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('git path');
+        return view('git path aasasasas');
       
 
     }
