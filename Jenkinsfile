@@ -46,10 +46,14 @@ pipeline {
             }
         }
 
+        stage('integration_testing') {
+    	sh 'vendor/bin/phpunit tests/Feature'
+    }
+
         stage(' Unit Testing') {
             steps {
                 sh """
-                php artisan tests
+                php artisan test
                 echo "Running Unit Tests"
                 """
             }
