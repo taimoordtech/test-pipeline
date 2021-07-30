@@ -51,7 +51,6 @@ pipeline {
         stage(' Unit Testing') {
             steps {
                 sh """
-                ./vendor/bin/phpunit
                 echo "Running Unit Tests"
                 """
             }
