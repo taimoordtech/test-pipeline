@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('new changes');
+        return view('its working now..jenkin is working');
       
 
     }
