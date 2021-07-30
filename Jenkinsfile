@@ -50,6 +50,7 @@ pipeline {
         stage(' Unit Testing') {
             steps {
                 sh """
+                'php artisan test'
                 echo "Running Unit Tests"
                 """
             }
