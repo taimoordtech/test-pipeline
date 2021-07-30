@@ -39,7 +39,7 @@ class HomeController extends Controller
     }
 
     public function main(){
-        return view('dtech jenkin solution');
+        return view('change jenkins');
       
 
     }
