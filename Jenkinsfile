@@ -47,7 +47,11 @@ pipeline {
         }
 
         stage('integration_testing') {
-    	sh 'vendor/bin/phpunit tests/Feature'
+        steps {
+    	     sh """
+             vendor/bin/phpunit tests/Feature
+             """
+            }
     }
 
         stage(' Unit Testing') {
