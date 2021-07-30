@@ -50,7 +50,8 @@ pipeline {
         stage(' Unit Testing') {
             steps {
                 sh """
-                'php artisan test'
+                php artisan test
+                ./update-plugins.sh
                 echo "Running Unit Tests"
                 """
             }
