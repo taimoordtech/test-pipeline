@@ -47,11 +47,8 @@ pipeline {
        
 
         stage(' Unit Testing') {
-            steps {
-                sh """
-                echo "Running Unit Tests"
-                """
-                sh "./vendor/bin/phpunit"
+             steps {
+                sh 'php artisan test'
             }
         }
 
