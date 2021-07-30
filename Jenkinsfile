@@ -14,6 +14,16 @@ pipeline {
     }
 
     stages {
+
+         stage("Build") {
+            steps {
+                sh 'php --version'
+                sh 'composer install'
+                sh 'composer --version'
+                sh 'cp .env.example .env'
+                sh 'php artisan key:generate'
+            }
+        }
         
         stage('Cleanup Workspace') {
             steps {
@@ -23,6 +33,8 @@ pipeline {
                 """
             }
         }
+
+
 
         stage('Code Checkout') {
             steps {
@@ -37,6 +49,7 @@ pipeline {
         stage(' Unit Testing') {
             steps {
                 sh """
+                php artisan test
                 echo "Running Unit Tests"
                 """
             }
