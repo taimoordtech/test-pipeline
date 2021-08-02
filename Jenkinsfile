@@ -24,10 +24,13 @@ pipeline {
                 sh 'php artisan key:generate'
             }
         }
+
+
         
         stage('Cleanup Workspace') {
             steps {
                 cleanWs()
+                deleteDir()
                 sh """
                 echo "Cleaned Up Workspace For Project"
                 """
@@ -53,6 +56,7 @@ pipeline {
                 sh """
                 echo "Unit testing running"
                 """
+                sh 'vendor/bin/phpunit'
             }
         }
 
