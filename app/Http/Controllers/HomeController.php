@@ -13,9 +13,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-       
         return view('home.index');
-    
     }
 
     /**
@@ -38,9 +36,8 @@ class HomeController extends Controller
         return $num1+$num2;
     }
 
-    public function main(){
-        return view('change jenkins');
-      
-
+    public function main()
+    {
+        return view('new changes on jenkins');
     }
 }
